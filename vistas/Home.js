@@ -36,7 +36,7 @@ const Home = () => {
       }
 
       const result = await response.json();
-      setCocktails(result);
+      setCocktails(result); //el resultado se guarda en cocteles
     } catch (error) {
       console.error('Error fetching cocktails:', error);
       setCocktails([]);
